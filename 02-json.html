@@ -15,25 +15,7 @@
             const resp = await fetch('data.json');
             return await resp.json();
         },
-     }">[
-            {
-                nom: 'Jean',
-                projet: 'Alpine.js',
-                url: 'https://alpinejs.dev/'
-            },
-            {
-                nom: 'Maxime',
-                projet: 'Tailwind CSS',
-                url: 'https://tailwindcss.com/'
-            },
-            {
-                nom: 'Adam',
-                projet: 'Laravel',
-                url: 'https://laravel.com/'
-            }
-        ],
-
-    }">
+     }">
     <template x-for="obj in données">
         <li>
             <span x-text="obj.nom">nom</span> :
