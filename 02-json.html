@@ -11,7 +11,11 @@
        JSON 
     </h1>
     <ul x-data="{
-        données: [
+        async données() {
+            const resp = await fetch('data.json');
+            return await resp.json();
+        },
+     }">[
             {
                 nom: 'Jean',
                 projet: 'Alpine.js',
